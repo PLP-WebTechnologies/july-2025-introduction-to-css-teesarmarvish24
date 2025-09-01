@@ -1,0 +1,118 @@
+/*
+ * Universal selector to apply box-sizing: border-box to all elements.
+ * This ensures that padding and borders are included in an element's total width and height,
+ * which simplifies layout calculations and makes the box model more intuitive.
+ */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    /* Add some overall padding to the body */
+    padding: 20px;
+}
+
+.main-header {
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    background-color: #e2eafc;
+    border: 2px solid #b3cde0;
+    border-radius: 8px;
+}
+
+.main-header h1 {
+    margin: 0 0 10px 0; /* No top margin, but a bottom margin for spacing */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto; /* Centers the container on the page */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+/* * Styles for the content section, showcasing clear box model properties
+ */
+.content-section {
+    background-color: #d7e9f7;
+    border: 3px solid #81c784;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.content-section p {
+    margin: 0; /* Resetting default paragraph margin to show explicit spacing */
+}
+
+/* * Card layout to demonstrate consistent spacing
+ */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #f0f4ff;
+    border: 1px solid #cdd8f0;
+    padding: 20px; /* Inner spacing */
+    margin: 10px; /* Outer spacing */
+    flex: 1; /* Makes cards grow equally to fill the space */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    margin: 0 0 10px 0; /* Spacing between heading and paragraph */
+}
+
+/* * Button styling using padding for a larger click area
+ */
+.styled-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 25px; /* Adds space inside the button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+.styled-button:hover {
+    background-color: #45a049;
+}
+
+/* * Navigation styling with distinct padding and margin
+ */
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #6a6a6a;
+    border-radius: 5px;
+}
+
+.navigation li {
+    padding: 15px 20px; /* Inner spacing within list items */
+    margin: 0 5px; /* Outer spacing between list items */
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
